@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 ''' Main executable '''
 from app import create_app
+from config import config
 
 
-app = create_app()
+environment = config['development']
+app = create_app(environment)
 
 
 if __name__ == '__main__':
