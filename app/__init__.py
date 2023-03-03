@@ -9,7 +9,7 @@ def create_app(environment):
     # and use special variable __name__, which represents the name of the current module
     app = Flask(__name__)
 
-    # Use 'environment' object to set the app configuration
+    # Use 'environment' module that contains the configuration settings for the application.
     app.config.from_object(environment)
 
     return app
