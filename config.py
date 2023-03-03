@@ -10,7 +10,7 @@ class DevelopmentConfig(Config):
     ''' Development environment configuration class '''
     DEBUG = True
 
-# Dictionary to store class Development
+# Dictionary to store class Development, which will store configurations for the app
 config = {
     'development': DevelopmentConfig
 }
