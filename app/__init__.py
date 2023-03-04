@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' Create a Flask server '''
 from flask import Flask
+from .models import db
 
 
 def create_app(environment):
