@@ -11,3 +11,7 @@ class Task(db.Model):
     deadline = db.Column(db.DateTime(), nullable=False)
     created_at = db.Column(db.DateTime(), nullable=False,
                            default=db.func.current_timestamp())
+    
+    # Return title attribute when __str__() method is called
+    def __str__(self):
+        return self.title
