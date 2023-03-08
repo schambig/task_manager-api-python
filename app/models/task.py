@@ -4,6 +4,7 @@ from . import db
 
 # Use a class (db.Model) provided by SQLAlchemy's ORM (Object-Relational Mapping) library
 class Task(db.Model):
+    # Define the attributes for the model
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(50), nullable=False)
     description = db.Column(db.Text, nullable=False)
